@@ -1,0 +1,5 @@
+package-as: QuestItemStatus
+
+ignore:
+  - README.md
+  - .github

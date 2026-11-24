@@ -1,0 +1,11 @@
+## Interface: 16001
+## Title: QuestItemStatus
+## Notes: Shows which quests an item belongs to and whether you have completed them.
+## Notes-ruRU: Показывает в подсказке предмета его квесты и сдан ли каждый.
+## Author: HexNeo
+## Version: @project-version@
+## Dependencies: QuestieDB
+## Category: Quests
+## X-License: MIT
+
+QuestItemStatus.lua
