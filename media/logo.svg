@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="75%">
+      <stop offset="0" stop-color="#3a2a5c"/>
+      <stop offset="0.6" stop-color="#1d1533"/>
+      <stop offset="1" stop-color="#0b0814"/>
+    </radialGradient>
+    <linearGradient id="frame" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3d27a"/>
+      <stop offset="0.35" stop-color="#a8792c"/>
+      <stop offset="0.65" stop-color="#e8c060"/>
+      <stop offset="1" stop-color="#6b4716"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6e7c1"/>
+      <stop offset="0.6" stop-color="#e2c78e"/>
+      <stop offset="1" stop-color="#b8935a"/>
+    </linearGradient>
+    <linearGradient id="roll" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff3d4"/>
+      <stop offset="0.5" stop-color="#d7b677"/>
+      <stop offset="1" stop-color="#8a6630"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff27a"/>
+      <stop offset="0.5" stop-color="#ffc21a"/>
+      <stop offset="1" stop-color="#c77a00"/>
+    </linearGradient>
+    <radialGradient id="badge" cx="40%" cy="35%" r="70%">
+      <stop offset="0" stop-color="#9dff7a"/>
+      <stop offset="0.55" stop-color="#2fae2a"/>
+      <stop offset="1" stop-color="#0f5a12"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#ffd24a" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffd24a" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <!-- icon frame -->
+  <rect x="8" y="8" width="496" height="496" rx="40" fill="url(#frame)"/>
+  <rect x="26" y="26" width="460" height="460" rx="26" fill="#2a1a08"/>
+  <rect x="34" y="34" width="444" height="444" rx="20" fill="url(#bg)"/>
+  <circle cx="256" cy="230" r="200" fill="url(#glow)"/>
+
+  <!-- scroll -->
+  <g filter="url(#shadow)" transform="rotate(-8 256 256)">
+    <path d="M150 120 H362 V392 H150 Z" fill="url(#paper)" stroke="#6b4716" stroke-width="6"/>
+    <path d="M150 380 Q140 420 175 420 H372 Q340 420 362 380" fill="#c9a669" stroke="#6b4716" stroke-width="6"/>
+    <rect x="122" y="96" width="268" height="40" rx="20" fill="url(#roll)" stroke="#6b4716" stroke-width="6"/>
+    <circle cx="122" cy="116" r="22" fill="#7a2418" stroke="#3a0f08" stroke-width="5"/>
+    <circle cx="390" cy="116" r="22" fill="#7a2418" stroke="#3a0f08" stroke-width="5"/>
+    <!-- text lines -->
+    <g stroke="#8a6630" stroke-width="8" stroke-linecap="round" opacity="0.75">
+      <line x1="185" y1="170" x2="330" y2="170"/>
+      <line x1="185" y1="200" x2="300" y2="200"/>
+      <line x1="185" y1="230" x2="320" y2="230"/>
+      <line x1="185" y1="260" x2="280" y2="260"/>
+      <line x1="185" y1="290" x2="315" y2="290"/>
+      <line x1="185" y1="320" x2="260" y2="320"/>
+    </g>
+  </g>
+
+  <!-- quest exclamation -->
+  <g filter="url(#shadow)">
+    <path d="M232 150 H280 L270 300 H242 Z" fill="url(#gold)" stroke="#3b2200" stroke-width="8" stroke-linejoin="round"/>
+    <circle cx="256" cy="340" r="26" fill="url(#gold)" stroke="#3b2200" stroke-width="8"/>
+  </g>
+
+  <!-- completed badge -->
+  <g filter="url(#shadow)">
+    <circle cx="378" cy="382" r="78" fill="#2a1a08"/>
+    <circle cx="378" cy="382" r="70" fill="url(#frame)"/>
+    <circle cx="378" cy="382" r="58" fill="url(#badge)"/>
+    <path d="M345 384 L370 410 L414 356" fill="none" stroke="#0a3a0a" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M345 384 L370 410 L414 356" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
